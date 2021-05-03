@@ -1,6 +1,6 @@
 *       *********************************************************
 *       *                                                         
-*       * 03/20/21              MENU.MPR                11:28:47  
+*       * 04/30/21              MENU.MPR                09:58:07  
 *       *                                                         
 *       *********************************************************
 *       *                                                         
@@ -133,40 +133,40 @@ ENDIF
 
 DEFINE MENU (m.cMenuName) IN (m.oFormRef.Name) BAR
 
-DEFINE PAD _60a0olshe OF (m.cMenuName) PROMPT "Inicio" COLOR SCHEME 3 ;
+DEFINE PAD _61f0ld6vs OF (m.cMenuName) PROMPT "Inicio" COLOR SCHEME 3 ;
 	KEY ALT+I, ""
-DEFINE PAD _60a0olshf OF (m.cMenuName) PROMPT "Ver" COLOR SCHEME 3 ;
+DEFINE PAD _61f0ld6vt OF (m.cMenuName) PROMPT "Ver" COLOR SCHEME 3 ;
 	KEY ALT+V, ""
-DEFINE PAD _60a0olshg OF (m.cMenuName) PROMPT "Configuracion" COLOR SCHEME 3 ;
+DEFINE PAD _61f0ld6vu OF (m.cMenuName) PROMPT "Configuracion" COLOR SCHEME 3 ;
 	KEY ALT+C, ""
-DEFINE PAD _60a0olshh OF (m.cMenuName) PROMPT "Herramientas" COLOR SCHEME 3 ;
+DEFINE PAD _61f0ld6vv OF (m.cMenuName) PROMPT "Herramientas" COLOR SCHEME 3 ;
 	KEY ALT+H, ""
-DEFINE PAD _60a0olshi OF (m.cMenuName) PROMPT "Reportes" COLOR SCHEME 3 ;
+DEFINE PAD _61f0ld6vw OF (m.cMenuName) PROMPT "Reportes" COLOR SCHEME 3 ;
 	KEY ALT+R, ""
-DEFINE PAD _60a0olshj OF (m.cMenuName) PROMPT "Ayuda" COLOR SCHEME 3 ;
+DEFINE PAD _61f0ld6vx OF (m.cMenuName) PROMPT "Ayuda" COLOR SCHEME 3 ;
 	KEY ALT+A, ""
-DEFINE PAD _60a0olshk OF (m.cMenuName) PROMPT "Acerca De" COLOR SCHEME 3 ;
+DEFINE PAD _61f0ld6vy OF (m.cMenuName) PROMPT "Acerca De" COLOR SCHEME 3 ;
 	KEY ALT+A, ""
-ON PAD _60a0olshe OF (m.cMenuName) ACTIVATE POPUP (a_menupops[1])
-ON PAD _60a0olshf OF (m.cMenuName) ACTIVATE POPUP (a_menupops[2])
-ON PAD _60a0olshg OF (m.cMenuName) ACTIVATE POPUP (a_menupops[5])
-ON PAD _60a0olshh OF (m.cMenuName) ACTIVATE POPUP (a_menupops[6])
-ON PAD _60a0olshi OF (m.cMenuName) ACTIVATE POPUP (a_menupops[8])
-ON PAD _60a0olshj OF (m.cMenuName) ACTIVATE POPUP (a_menupops[9])
-ON PAD _60a0olshk OF (m.cMenuName) ACTIVATE POPUP (a_menupops[11])
+ON PAD _61f0ld6vs OF (m.cMenuName) ACTIVATE POPUP (a_menupops[1])
+ON PAD _61f0ld6vt OF (m.cMenuName) ACTIVATE POPUP (a_menupops[2])
+ON PAD _61f0ld6vu OF (m.cMenuName) ACTIVATE POPUP (a_menupops[5])
+ON PAD _61f0ld6vv OF (m.cMenuName) ACTIVATE POPUP (a_menupops[6])
+ON PAD _61f0ld6vw OF (m.cMenuName) ACTIVATE POPUP (a_menupops[8])
+ON PAD _61f0ld6vx OF (m.cMenuName) ACTIVATE POPUP (a_menupops[9])
+ON PAD _61f0ld6vy OF (m.cMenuName) ACTIVATE POPUP (a_menupops[11])
 
 DEFINE POPUP (a_menupops[1]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
 DEFINE BAR 1 OF (a_menupops[1]) PROMPT "Cerrar Sesion"
 DEFINE BAR 2 OF (a_menupops[1]) PROMPT "Cambio de clave"
 DEFINE BAR 3 OF (a_menupops[1]) PROMPT "Salir del sistema"
 ON SELECTION BAR 1 OF (a_menupops[1]) ;
-	DO _60a0olshl ;
+	DO _61f0ld6vz ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 2 OF (a_menupops[1]) ;
-	DO _60a0olshm ;
+	DO _61f0ld6w0 ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 3 OF (a_menupops[1]) ;
-	DO _60a0olshn ;
+	DO _61f0ld6w1 ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 
 DEFINE POPUP (a_menupops[2]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -179,10 +179,10 @@ DEFINE POPUP (a_menupops[3]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
 DEFINE BAR 1 OF (a_menupops[3]) PROMPT "Ver Barra de Menu"
 DEFINE BAR 2 OF (a_menupops[3]) PROMPT "Ocultar Barra de Menu"
 ON SELECTION BAR 1 OF (a_menupops[3]) ;
-	DO _60a0olsho ;
+	DO _61f0ld6w2 ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 2 OF (a_menupops[3]) ;
-	DO _60a0olshp ;
+	DO _61f0ld6w3 ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 
 DEFINE POPUP (a_menupops[4]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -192,29 +192,29 @@ DEFINE BAR 3 OF (a_menupops[4]) PROMPT "Compra / Venta"
 DEFINE BAR 4 OF (a_menupops[4]) PROMPT "Tesoreria"
 DEFINE BAR 5 OF (a_menupops[4]) PROMPT "Ayuda"
 ON SELECTION BAR 1 OF (a_menupops[4]) ;
-	DO _60a0olshq ;
+	DO _61f0ld6w4 ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 2 OF (a_menupops[4]) ;
-	DO _60a0olshr ;
+	DO _61f0ld6w5 ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 3 OF (a_menupops[4]) ;
-	DO _60a0olshs ;
+	DO _61f0ld6w6 ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 4 OF (a_menupops[4]) ;
-	DO _60a0olsht ;
+	DO _61f0ld6w7 ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 5 OF (a_menupops[4]) ;
-	DO _60a0olshu ;
+	DO _61f0ld6w8 ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 
 DEFINE POPUP (a_menupops[5]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
 DEFINE BAR 1 OF (a_menupops[5]) PROMPT "Datos Basicos"
 DEFINE BAR 2 OF (a_menupops[5]) PROMPT "BackUp Base  de Datos"
 ON SELECTION BAR 1 OF (a_menupops[5]) ;
-	DO _60a0olshv ;
+	DO _61f0ld6w9 ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 2 OF (a_menupops[5]) ;
-	DO _60a0olshw ;
+	DO _61f0ld6wa ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 
 DEFINE POPUP (a_menupops[6]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -226,23 +226,23 @@ DEFINE BAR 1 OF (a_menupops[7]) PROMPT "Valor de Cambio"
 DEFINE BAR 2 OF (a_menupops[7]) PROMPT "Registro de RUC"
 DEFINE BAR 3 OF (a_menupops[7]) PROMPT "Enlaces Consulta de RUC"
 ON SELECTION BAR 1 OF (a_menupops[7]) ;
-	DO _60a0olshx ;
+	DO _61f0ld6wb ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 2 OF (a_menupops[7]) ;
-	DO _60a0olshy ;
+	DO _61f0ld6wc ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 3 OF (a_menupops[7]) ;
-	DO _60a0olshz ;
+	DO _61f0ld6wd ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 
 DEFINE POPUP (a_menupops[8]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
 DEFINE BAR 1 OF (a_menupops[8]) PROMPT "Reportes generales"
 DEFINE BAR 2 OF (a_menupops[8]) PROMPT "Reportes Administrativos"
 ON SELECTION BAR 1 OF (a_menupops[8]) ;
-	DO _60a0olsi0 ;
+	DO _61f0ld6we ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 2 OF (a_menupops[8]) ;
-	DO _60a0olsi1 ;
+	DO _61f0ld6wf ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 
 DEFINE POPUP (a_menupops[9]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -251,10 +251,10 @@ DEFINE BAR 2 OF (a_menupops[9]) PROMPT "Manual"
 DEFINE BAR 3 OF (a_menupops[9]) PROMPT "Actulizacion"
 ON BAR 1 OF (a_menupops[9]) ACTIVATE POPUP (a_menupops[10])
 ON SELECTION BAR 2 OF (a_menupops[9]) ;
-	DO _60a0olsi2 ;
+	DO _61f0ld6wg ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 3 OF (a_menupops[9]) ;
-	DO _60a0olsi3 ;
+	DO _61f0ld6wh ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 
 DEFINE POPUP (a_menupops[10]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -262,19 +262,19 @@ DEFINE BAR 1 OF (a_menupops[10]) PROMPT "Ticket Online"
 DEFINE BAR 2 OF (a_menupops[10]) PROMPT "AnyDesk"
 DEFINE BAR 3 OF (a_menupops[10]) PROMPT "Team Viewer"
 ON SELECTION BAR 1 OF (a_menupops[10]) ;
-	DO _60a0olsi4 ;
+	DO _61f0ld6wi ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 2 OF (a_menupops[10]) ;
-	DO _60a0olsi5 ;
+	DO _61f0ld6wj ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 ON SELECTION BAR 3 OF (a_menupops[10]) ;
-	DO _60a0olsi6 ;
+	DO _61f0ld6wk ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 
 DEFINE POPUP (a_menupops[11]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
 DEFINE BAR 1 OF (a_menupops[11]) PROMPT "Acerca De SERVAL"
 ON SELECTION BAR 1 OF (a_menupops[11]) ;
-	DO _60a0olsi7 ;
+	DO _61f0ld6wl ;
 	IN LOCFILE("SERVAL-TRIANGULOV2\MENU\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 
 ACTIVATE MENU (m.cMenuName) NOWAIT
@@ -287,7 +287,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHL  ON SELECTION BAR 1 OF POPUP inicio          
+*       * _61F0LD6VZ  ON SELECTION BAR 1 OF POPUP inicio          
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -298,7 +298,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshl
+PROCEDURE _61f0ld6vz
 *Vgc_usuario = ''
 
 Vpn_cerrar = 1
@@ -318,7 +318,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHM  ON SELECTION BAR 2 OF POPUP inicio          
+*       * _61F0LD6W0  ON SELECTION BAR 2 OF POPUP inicio          
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -329,7 +329,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshm
+PROCEDURE _61f0ld6w0
 *DO FORM cambio_clave
 
 IF WEXIST("cambio_clave") = .T.
@@ -344,7 +344,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHN  ON SELECTION BAR 3 OF POPUP inicio          
+*       * _61F0LD6W1  ON SELECTION BAR 3 OF POPUP inicio          
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -355,7 +355,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshn
+PROCEDURE _61f0ld6w1
 *nres = MESSAGEBOX("¿Realmente desea Salir del Sistema?", 4+48, "Salir del Sistema")
 * IF nres = 6	
 	*QUIT
@@ -373,7 +373,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHO  ON SELECTION BAR 1 OF POPUP barrademen      
+*       * _61F0LD6W2  ON SELECTION BAR 1 OF POPUP barrademen      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -384,7 +384,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olsho
+PROCEDURE _61f0ld6w2
 	LOCAL oForm
 	oForm = _screen.ActiveForm	
 	oForm.pageframe1.visible=.t.
@@ -399,7 +399,7 @@ PROCEDURE _60a0olsho
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHP  ON SELECTION BAR 2 OF POPUP barrademen      
+*       * _61F0LD6W3  ON SELECTION BAR 2 OF POPUP barrademen      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -410,7 +410,7 @@ PROCEDURE _60a0olsho
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshp
+PROCEDURE _61f0ld6w3
 	LOCAL oForm
 	oForm = _screen.ActiveForm	
 	oForm.pageframe1.visible=.f.
@@ -425,7 +425,7 @@ PROCEDURE _60a0olshp
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHQ  ON SELECTION BAR 1 OF POPUP barradeher      
+*       * _61F0LD6W4  ON SELECTION BAR 1 OF POPUP barradeher      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -436,7 +436,7 @@ PROCEDURE _60a0olshp
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshq
+PROCEDURE _61f0ld6w4
 	SET CLASSLIB TO lcAppDir+'Clase\herramientas.Vcx'
 	
 	LOCAL oForm
@@ -465,7 +465,7 @@ PROCEDURE _60a0olshq
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHR  ON SELECTION BAR 2 OF POPUP barradeher      
+*       * _61F0LD6W5  ON SELECTION BAR 2 OF POPUP barradeher      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -476,7 +476,7 @@ PROCEDURE _60a0olshq
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshr
+PROCEDURE _61f0ld6w5
 	SET CLASSLIB TO lcAppDir+'Clase\herramientas.Vcx'	
 	LOCAL oForm
 	oForm = _screen.ActiveForm	
@@ -503,7 +503,7 @@ PROCEDURE _60a0olshr
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHS  ON SELECTION BAR 3 OF POPUP barradeher      
+*       * _61F0LD6W6  ON SELECTION BAR 3 OF POPUP barradeher      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -514,7 +514,7 @@ PROCEDURE _60a0olshr
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshs
+PROCEDURE _61f0ld6w6
 	SET CLASSLIB TO lcAppDir+'Clase\herramientas.Vcx'	
 	LOCAL oForm
 	oForm = _screen.ActiveForm	
@@ -541,7 +541,7 @@ PROCEDURE _60a0olshs
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHT  ON SELECTION BAR 4 OF POPUP barradeher      
+*       * _61F0LD6W7  ON SELECTION BAR 4 OF POPUP barradeher      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -552,7 +552,7 @@ PROCEDURE _60a0olshs
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olsht
+PROCEDURE _61f0ld6w7
 	SET CLASSLIB TO lcAppDir+'Clase\herramientas.Vcx'
 	LOCAL oForm
 	oForm = _screen.ActiveForm	
@@ -579,7 +579,7 @@ PROCEDURE _60a0olsht
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHU  ON SELECTION BAR 5 OF POPUP barradeher      
+*       * _61F0LD6W8  ON SELECTION BAR 5 OF POPUP barradeher      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -590,7 +590,7 @@ PROCEDURE _60a0olsht
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshu
+PROCEDURE _61f0ld6w8
 SET CLASSLIB TO lcAppDir+'Clase\herramientas.Vcx'
 	LOCAL oForm
 	oForm = _screen.ActiveForm	
@@ -617,7 +617,7 @@ SET CLASSLIB TO lcAppDir+'Clase\herramientas.Vcx'
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHV  ON SELECTION BAR 1 OF POPUP configurac      
+*       * _61F0LD6W9  ON SELECTION BAR 1 OF POPUP configurac      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -628,7 +628,7 @@ SET CLASSLIB TO lcAppDir+'Clase\herramientas.Vcx'
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshv
+PROCEDURE _61f0ld6w9
 *DO FORM config_datos
 IF WEXIST("config_datos") = .T.
 	*MESSAGEBOX('YA ESTA ABIERTO')
@@ -640,7 +640,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHW  ON SELECTION BAR 2 OF POPUP configurac      
+*       * _61F0LD6WA  ON SELECTION BAR 2 OF POPUP configurac      
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -651,7 +651,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshw
+PROCEDURE _61f0ld6wa
 SET STEP ON
 Conex=SQLSTRINGCONNECT(Vcl_conex)
 IF conex > 0 		
@@ -694,7 +694,7 @@ MESSAGEBOX("Backup guardado con éxito en el SERVIDOR en la siguiente dirección: 
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHX  ON SELECTION BAR 1 OF POPUP sunat           
+*       * _61F0LD6WB  ON SELECTION BAR 1 OF POPUP sunat           
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -705,7 +705,7 @@ MESSAGEBOX("Backup guardado con éxito en el SERVIDOR en la siguiente dirección: 
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshx
+PROCEDURE _61f0ld6wb
 *DO FORM cambio_moneda
 IF WEXIST("cambio_moneda") = .T.
 	*MESSAGEBOX('YA ESTA ABIERTO')
@@ -717,7 +717,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHY  ON SELECTION BAR 2 OF POPUP sunat           
+*       * _61F0LD6WC  ON SELECTION BAR 2 OF POPUP sunat           
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -728,7 +728,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshy
+PROCEDURE _61f0ld6wc
 *DO FORM cambio_moneda
 IF WEXIST("consulta_sunat") = .T.
 	*MESSAGEBOX('YA ESTA ABIERTO')
@@ -740,7 +740,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSHZ  ON SELECTION BAR 3 OF POPUP sunat           
+*       * _61F0LD6WD  ON SELECTION BAR 3 OF POPUP sunat           
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -751,7 +751,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olshz
+PROCEDURE _61f0ld6wd
 *DO FORM cambio_moneda
 IF WEXIST("enlaces_sunat") = .T.
 	*MESSAGEBOX('YA ESTA ABIERTO')
@@ -763,7 +763,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSI0  ON SELECTION BAR 1 OF POPUP reportes        
+*       * _61F0LD6WE  ON SELECTION BAR 1 OF POPUP reportes        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -774,7 +774,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olsi0
+PROCEDURE _61f0ld6we
 *DO FORM reportes_generales
 IF WEXIST("reportes_generales") = .T.
 	*MESSAGEBOX('YA ESTA ABIERTO')
@@ -786,7 +786,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSI1  ON SELECTION BAR 2 OF POPUP reportes        
+*       * _61F0LD6WF  ON SELECTION BAR 2 OF POPUP reportes        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -797,7 +797,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olsi1
+PROCEDURE _61f0ld6wf
 *DO FORM reportes_admin
 IF WEXIST("reportes_admin") = .T.
 	*MESSAGEBOX('YA ESTA ABIERTO')
@@ -809,7 +809,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSI2  ON SELECTION BAR 2 OF POPUP ayuda           
+*       * _61F0LD6WG  ON SELECTION BAR 2 OF POPUP ayuda           
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -820,7 +820,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olsi2
+PROCEDURE _61f0ld6wg
 o = CREATEOBJECT("Shell.Application")
 o.Open("https://www.youtube.com/channel/UCN0UVkYKnzIVhmWhL1pDMqg/videos")
 
@@ -828,7 +828,7 @@ o.Open("https://www.youtube.com/channel/UCN0UVkYKnzIVhmWhL1pDMqg/videos")
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSI3  ON SELECTION BAR 3 OF POPUP ayuda           
+*       * _61F0LD6WH  ON SELECTION BAR 3 OF POPUP ayuda           
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -839,7 +839,7 @@ o.Open("https://www.youtube.com/channel/UCN0UVkYKnzIVhmWhL1pDMqg/videos")
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olsi3
+PROCEDURE _61f0ld6wh
  nres = MESSAGEBOX("¿Para poder actualizar la Sesion se Cerrará, Desesa continuar?",4+48,"Actualizar Sistema")
  IF nres = 6
  	
@@ -855,7 +855,7 @@ ENDIF
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSI4  ON SELECTION BAR 1 OF POPUP soporte         
+*       * _61F0LD6WI  ON SELECTION BAR 1 OF POPUP soporte         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -866,7 +866,7 @@ ENDIF
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olsi4
+PROCEDURE _61f0ld6wi
 o = CREATEOBJECT("Shell.Application")
 o.Open("http://www.cyberpowerperu.com/soporte/")
 
@@ -874,7 +874,7 @@ o.Open("http://www.cyberpowerperu.com/soporte/")
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSI5  ON SELECTION BAR 2 OF POPUP soporte         
+*       * _61F0LD6WJ  ON SELECTION BAR 2 OF POPUP soporte         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -885,7 +885,7 @@ o.Open("http://www.cyberpowerperu.com/soporte/")
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olsi5
+PROCEDURE _61f0ld6wj
 objShell=CreateObject("Wscript.Shell")
 objShell.Run(lcAppDir+"anydesk.EXE")
 objShell = null
@@ -895,7 +895,7 @@ objShell = null
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSI6  ON SELECTION BAR 3 OF POPUP soporte         
+*       * _61F0LD6WK  ON SELECTION BAR 3 OF POPUP soporte         
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -906,7 +906,7 @@ objShell = null
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olsi6
+PROCEDURE _61f0ld6wk
 
 objShell=CreateObject("Wscript.Shell")
 objShell.Run(lcAppDir+"tv.EXE")
@@ -917,7 +917,7 @@ objShell = null
 
 *       *********************************************************
 *       *                                                         
-*       * _60A0OLSI7  ON SELECTION BAR 1 OF POPUP acercade        
+*       * _61F0LD6WL  ON SELECTION BAR 1 OF POPUP acercade        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -928,7 +928,7 @@ objShell = null
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _60a0olsi7
+PROCEDURE _61f0ld6wl
 *DO FORM ACERCA_DE
 IF WEXIST("ACERCA_DE") = .T.
 	*MESSAGEBOX('YA ESTA ABIERTO')
